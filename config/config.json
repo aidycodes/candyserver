@@ -17,7 +17,7 @@
     "username": "postgres",
     "password": "TERA2022",
     "database": "candystore_DB",
-    "host": "127.0.0.1",
+    "host": "postgresql://postgres:KFuQk1VruClRXxv2Hjr9@containers-us-west-32.railway.app:6569/railway  ",
     "dialect": "postgres"
   }
 }
