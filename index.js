@@ -66,7 +66,7 @@ app.use(require('./routes'));
 const PORT = process.env.PORT || 8000
 
 // Server listens 
-app.listen('0.0.0.0:1', () => {
+app.listen(port, () => {
     console.log(`Server Listerning on port ${PORT}`)
 });
 
