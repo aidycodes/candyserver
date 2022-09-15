@@ -16,7 +16,7 @@ require('dotenv').config();
 var app = express();
 
 //create reddis
-const redisClient = new Redis(6379, "redis://default:SfTHPkjxVTkmNM0IXe3C@containers-us-west-80.railway.app:6231")
+const redisClient = new Redis($PORT, "0.0.0.0")
 
 //DB Connection
 require("./src/database/connection")
