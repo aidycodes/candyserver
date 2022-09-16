@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('candystore_DB', 'postgres69', 'TERA2022', {
-    host: 'localhost',
+    host: 'containers-us-west-84.railway.app',
     dialect: 'postgres',
     define: {
         timestamps: false
