@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "postgres",
+    "username": "postgres1",
     "password": "TERA2022",
     "database": "candystore_DB",
-    "host": "129.0.0.1",
+    "host": "containers-us-west-84.railway.app",
     "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
+    "username": "postgres2",
     "password": "TERA2022",
     "database": "candystore_DB",
-    "host": "126.0.0.1",
+    "host": "containers-us-west-84.railway.app",
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
+    "username": "postgres3",
     "password": "GEoZsTgQAR46jFHK2PDt",
     "database": "railway",
-    "host": "postgresql://postgres:GEoZsTgQAR46jFHK2PDt@containers-us-west-84.railway.app:7763/railway",
+    "host": "containers-us-west-84.railway.app",
     "dialect": "postgres"
   }
 }
