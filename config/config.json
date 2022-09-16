@@ -3,20 +3,20 @@
     "username": "postgres",
     "password": "TERA2022",
     "database": "candystore_DB",
-    "host": "127.0.0.1",
+    "host": "129.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "TERA2022",
     "database": "candystore_DB",
-    "host": "127.0.0.1",
+    "host": "126.0.0.1",
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
-    "password": "TERA2022",
-    "database": "candystore_DB",
+    "password": "KFuQk1VruClRXxv2Hjr9",
+    "database": "railway",
     "host": "postgresql://postgres:KFuQk1VruClRXxv2Hjr9@containers-us-west-32.railway.app:6569/railway  ",
     "dialect": "postgres"
   }
