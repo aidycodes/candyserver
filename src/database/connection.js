@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('candystore_DB', 'postgres', 'TERA2022', {
+const sequelize = new Sequelize('candystore_DB', 'postgres69', 'TERA2022', {
     host: 'localhost',
     dialect: 'postgres',
     define: {
