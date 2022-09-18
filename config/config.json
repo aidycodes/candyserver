@@ -14,7 +14,7 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres3",
+    "username": "postgres",
     "password": "GEoZsTgQAR46jFHK2PDt",
     "database": "railway",
     "host": "containers-us-west-84.railway.app",
