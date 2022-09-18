@@ -18,6 +18,7 @@
     "password": "GEoZsTgQAR46jFHK2PDt",
     "database": "railway",
     "host": "containers-us-west-84.railway.app",
+    "port": "7763",
     "dialect": "postgres"
   }
 }
