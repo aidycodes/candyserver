@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Allows React application to make HTTP requests to Express application
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://candystore.vercel.app" }));
 
 //create express session for redis session
 app.use(session({
