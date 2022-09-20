@@ -42,6 +42,7 @@ app.use(session({
     cookie: {
         secure: true,
         httpOnly: false,
+        path: "https://candystore.vercel.app",
         sameSite: process.env.ENVIRONMENT === "production" ? "none" : "none"
     }
 }))
