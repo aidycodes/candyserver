@@ -42,7 +42,7 @@ app.use(session({
     cookie: {
         secure: process.env.ENVIRONMENT === "production",
         httpOnly: true,
-        sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax"
+        sameSite: process.env.ENVIRONMENT === "production" ? "none" : "none"
     }
 }))
 
