@@ -69,7 +69,7 @@ const PORT = process.env.PORT || 8000
 
 // Server listens 
 app.listen(PORT, () => {
-    console.log(`Server Listerning on port ${PORT}`)
+    console.log(`Server Listerning on port ${PORT} extra thing ${process.env.ENVIRONMENT}`)
 });
 
 
