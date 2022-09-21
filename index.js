@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Allows React application to make HTTP requests to Express application
-app.use(cors({ credentials: true, origin: "https://candystore.vercel.app" }));
+app.use(cors({ credentials: true, origin: "https://aidanjohnoconnor.co.uk" }));
 app.set("trust proxy", 1)
 //create express session for redis session ddd
 app.use(session({
@@ -42,7 +42,7 @@ app.use(session({
     saveUninitialized: false,
     cookie: {
         secure: true,
-        domain: '.vercel.app',
+        domain: 'aidanjohnoconnor.co.uk',
         httpOnly: false,
         sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax"
     }
