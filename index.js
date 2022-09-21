@@ -14,7 +14,7 @@ require('dotenv').config();
 
 // Create the Express application
 var app = express();
-
+app.set("trust proxy", 1)
 //create reddis
 const redisClient = new Redis("redis://default:SfTHPkjxVTkmNM0IXe3C@containers-us-west-80.railway.app:6231")
 
