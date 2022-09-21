@@ -14,7 +14,7 @@ require('dotenv').config();
 
 // Create the Express application
 var app = express();
-app.set("trust proxy", 1)
+// app.set("trust proxy", 1)
 //create reddis
 const redisClient = new Redis("redis://default:SfTHPkjxVTkmNM0IXe3C@containers-us-west-80.railway.app:6231")
 
@@ -43,7 +43,6 @@ app.use(session({
     cookie: {
         secure: true,
         httpOnly: false,
-        // domain: 'vercel.app',
         sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax"
     }
 }))
