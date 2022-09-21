@@ -42,8 +42,8 @@ app.use(session({
     saveUninitialized: false,
     cookie: {
         secure: true,
-        httpOnly: false,
-        domain: 'vercel.app',
+        httpOnly: true,
+        // domain: 'vercel.app',
         sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax"
     }
 }))
