@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: true }));
 // Allows React application to make HTTP requests to Express application
 app.use(cors({ credentials: true, origin: "https://aidanjohnoconnor.co.uk" }));
 // app.set("trust proxy", 1)
-//create express session for redis session 
+//create express session for redis session ddd
 app.use(session({
     secret: process.env.COOKIE_SECRET,
     credentials: true,
@@ -42,7 +42,7 @@ app.use(session({
     saveUninitialized: false,
     cookie: {
         secure: true,
-        domain: 'https://aidanjohnoconnor.co.uk',
+        // domain: 'https://aidanjohnoconnor.co.uk',
         httpOnly: false,
         sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax"
     }
