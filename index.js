@@ -41,7 +41,7 @@ app.use(session({
     saveUninitialized: false,
     cookie: {
         secure: true,
-        domain: '.aidanjohnoconnor.co.uk',
+        domain: 'aidanjohnoconnor.co.uk',
         httpOnly: false,
         sameSite: process.env.ENVIRONMENT === "production" ? "none" : "lax"
     }
