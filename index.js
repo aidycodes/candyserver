@@ -31,12 +31,11 @@ app.use(express.urlencoded({ extended: true }));
 // Allows React application to make HTTP requests to Express application
 app.use(cors({ credentials: true, origin: "https://aidanjohnoconnor.co.uk" }));
 // app.set("trust proxy", 1)
-//create express session for redis session dddddd
+//create express session for redis session dd
 app.use(session({
     secret: process.env.COOKIE_SECRET,
     credentials: true,
     name: 'sid',
-    
     store: new RedisStore({ client: redisClient }),
     resave: false,
     saveUninitialized: false,
