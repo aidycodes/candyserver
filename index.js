@@ -36,6 +36,7 @@ app.use(session({
     secret: process.env.COOKIE_SECRET,
     credentials: true,
     name: 'sid',
+    proxy:true,
     store: new RedisStore({ client: redisClient }),
     resave: false,
     saveUninitialized: false,
