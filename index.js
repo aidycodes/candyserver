@@ -15,6 +15,13 @@ require('dotenv').config();
 // Create the Express application
 var app = express();
 // app.set("trust proxy", 1)
+
+//stripe
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
+    apiVersion:"2022-08-01"
+})
+
+
 //create reddis
 const redisClient = new Redis("redis://default:SfTHPkjxVTkmNM0IXe3C@containers-us-west-80.railway.app:6231")
 
@@ -30,6 +37,28 @@ app.use(express.urlencoded({ extended: true }));
 
 // Allows React application to make HTTP requests to Express application
 app.use(cors({ credentials: true, origin: "https://aidanjohnoconnor.co.uk" }));
+
+//strip functions
+app.get('/config', (req,res) => {
+    res.send({publishablekey:process.env.STRIPE_PUBLISHABLE_KEY})
+})
+
+app.post("/create-payment.intent", async(req,res) => {
+    try{
+        console.log(req.body.amount * 100, 'AMOUNT')
+    const paymentIntent = await stripe.paymentIntents.create({
+        currency:'gbp',
+        amount:req.body.amount * 100,
+        automatic_payment_methods:{
+            enabled:true,
+        }
+    })
+    console.log(paymentIntent)
+    res.send({clientSecret:paymentIntent.client_secret})
+    }catch(err){
+        res.status(400).send({err})
+    }
+})
 // app.set("trust proxy", 1)
 //create express session for redis session dd
 app.use(session({
