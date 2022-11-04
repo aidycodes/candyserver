@@ -6,7 +6,7 @@ const Redis = require('ioredis')
 const RedisStore = require('connect-redis')(session)
 
 /**
- * -------------- GENERAL SETUP ----------------
+ * -------------- GENERAL SETUP ---------------- setup
  */
 
 // Gives access to variables set in the .en
@@ -36,7 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Allows React application to make HTTP requests to Express application
-app.use(cors({ credentials: true, origin: "https://aidanjohnoconnor.co.uk" }));
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
 //strip functions
 app.get('/config', (req,res) => {
