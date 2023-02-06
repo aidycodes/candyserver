@@ -36,7 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Allows React application to make HTTP requests to Express application
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://aidanjohnoconnor.co.uk" }));
 
 //strip functions
 app.get('/config', (req,res) => {
