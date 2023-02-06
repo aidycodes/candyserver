@@ -8,7 +8,7 @@ const { Sequelize } = require('sequelize');
 //     }
 // });
 
-const sequelize = new Sequelize('postgresqlpostgresql://postgres:ad5Mj8MlIffnSlVOeY7l@containers-us-west-84.railway.app:7763/railway', { define: { timestamps: false } });
+const sequelize = new Sequelize('postgresql://postgres:ad5Mj8MlIffnSlVOeY7l@containers-us-west-84.railway.app:7763/railway', { define: { timestamps: false } });
 
 module.exports = sequelize;
 global.sequelize = sequelize;
