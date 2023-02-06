@@ -23,7 +23,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
 
 
 //create reddis
-const redisClient = new Redis("redis://default:SfTHPkjxVTkmNM0IXe3C@containers-us-west-80.railway.app:6231")
+const redisClient = new Redis("redis://default:FFNokVKuOOqCFD2m0X91@containers-us-west-80.railway.app:6231")
 
 //DB Connection
 require("./src/database/connection")
